@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Flex box and Grid</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content container">
+        <div class="branding">
+          <img class="logo" src="https://picsum.photos/200" alt="logo" />
+          <h1>OUR COMPANY</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item disabled-nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="langing-section">
+          <img
+            src="./assets/landing-image.png"
+            alt="landing image of our website"
+            class="landing-image"
+          />
+          <div class="landing-content">
+            <div class="container landing-flex-container">
+              <h2 class="langing-heading">
+                Our company produce highest quality products.
+              </h2>
+              <p class="langing-description">
+                Don't take our word for it - check it out
+              </p>
+              <button class="landing-button">Our offer</button>
+            </div>
+          </div>
+        </section>
+        <section class="section container">
+          <h2 class="section-heading">Our specialists</h2>
+          <ul class="specialists-list">
+            <li class="specialist-list-item">
+              <img
+                class="specialist-image"
+                src="./assets/IT-Specialist.jpg"
+                alt="Specialist John Doe"
+              />
+              <div class="specialist-details">
+                <h3 class="specialist-name">John Doe [IT department]</h3>
+                <p class="specialist-description">
+                  Experts in Information Technology (IT) are responsible for
+                  helping companies manage their technical systems and
+                  supporting technology users with troubleshooting assistance.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="section blue-section">
+          <div class="container">
+            <h2 class="section-heading white-heading">
+              What our company does?
+            </h2>
+            <div class="services-grid">
+              <div class="service-item">Service 1</div>
+              <div class="service-item">Service 2</div>
+              <div class="service-item">Service 3</div>
+              <div class="service-item">Service 4</div>
+              <div class="service-item">Service 5</div>
+              <div class="service-item">Service 6</div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
