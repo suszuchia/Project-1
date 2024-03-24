@@ -32,7 +32,7 @@ body {
 /* --- HEADER --- */
 .header {
   padding: 10px;
-  background-color: bisque;
+  background-color: grey;
 
   -webkit-box-shadow: -10px 8px 28px -12px rgba(66, 68, 90, 1);
   -moz-box-shadow: -10px 8px 28px -12px rgba(66, 68, 90, 1);
@@ -80,7 +80,7 @@ body {
 }
 
 /* --- LANDING --- */
-.langing-section {
+.landing-section {
   position: relative;
 }
 
@@ -106,13 +106,13 @@ body {
   gap: 40px;
 }
 
-.langing-heading {
+.landing-heading {
   font-size: 36px;
   font-weight: 700;
   width: 550px;
 }
 
-.langing-description {
+.landing-description {
   font-size: 18px;
   font-weight: 700;
 }
@@ -129,10 +129,20 @@ body {
 }
 
 /* --- SPECIALISTS --- */
+.specialists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .specialist-list-item {
   display: flex;
   align-items: center;
   gap: 60px;
+}
+
+.reversed-specialist-list-item {
+  flex-direction: row-reverse;
 }
 
 .specialist-image {
@@ -150,6 +160,14 @@ body {
 
 .specialist-name {
   font-weight: 700;
+}
+
+.pecialist-name-reversed {
+  text-align: right;
+}
+
+.specialist-description-reversed {
+  text-align: right;
 }
 
 /* --- SERVICES --- */
