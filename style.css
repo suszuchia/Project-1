@@ -9,7 +9,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 .section {
@@ -110,7 +110,8 @@ body {
 }
 
 .landing-heading {
-  width: 460px;
+  max-width: 800px;
+  font-size: 50px;
 }
 
 .landing-description {
@@ -231,9 +232,16 @@ body {
   color: white;
   font-size: 18px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
 }
 
 .footer-icons {
