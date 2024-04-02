@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -74,6 +78,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .disabled-nav-item {
@@ -128,6 +134,7 @@ body {
   color: white;
   border: 3px solid white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* --- SPECIALISTS --- */
@@ -149,7 +156,7 @@ body {
   }
 }
 
-.reversed-specialist-list-item {
+.specialist-list-item:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
@@ -171,23 +178,23 @@ body {
   font-weight: 700;
 }
 
-.pecialist-name-reversed {
+.specialist-name:nth-of-type(even) {
   text-align: right;
 }
 
-.specialist-description-reversed {
+.specialist-description:nth-of-type(even) {
   text-align: right;
 }
 
 @media screen and (max-width: 768px) {
-  .reversed-specialist-list-item {
+  .specialist-list-item:nth-of-type(even) {
     flex-direction: column;
   }
-  .pecialist-name-reversed {
+  .pecialist-name:nth-of-type(even) {
     text-align: left;
   }
 
-  .specialist-description-reversed {
+  .specialist-description:nth-of-type(even) {
     text-align: left;
   }
 }
