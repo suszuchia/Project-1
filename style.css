@@ -135,6 +135,12 @@ body {
   border: 3px solid white;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 1s, color 1s;
+}
+
+.landing-button:hover {
+  background-color: white;
+  color: black;
 }
 
 /* --- SPECIALISTS --- */
@@ -228,6 +234,12 @@ body {
   -webkit-box-shadow: -10px 8px 28px -12px rgba(66, 68, 90, 1);
   -moz-box-shadow: -10px 8px 28px -12px rgba(66, 68, 90, 1);
   box-shadow: -10px 8px 28px -12px rgba(66, 68, 90, 1);
+
+  transition: transform 0.5s;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
 }
 
 .service-item-new {
